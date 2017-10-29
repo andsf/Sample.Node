@@ -15,9 +15,3 @@ io.on('connection', (socket) => {
 http.listen(3000, () => {
   console.log('listening on http://localhost:3000');
 });
-
-const connect = (socket) => {
-  socket.on('chat message', (message) => {//chat messageはイベントネーム
-    io.emit('chat message', message)
-  });
-}
