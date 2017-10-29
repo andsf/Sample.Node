@@ -8,7 +8,8 @@ express.get('/', (request, response) => {
   response.sendFile(path.resolve('../../demo/index.html'));
 });
 
-//socket.ioを使ってconnectionイベントに処理
+//コンソール画面に「http://localhost:3000」にアクセスしたら、
+//「user connected on chat page.」を表示するように設定してみる
 io.on();
 
 //ポートを指定する

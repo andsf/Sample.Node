@@ -8,7 +8,7 @@ express.get('/', (request, response) => {
 });
 
 io.on('connection', (socket) => {
-
+  //index.htmlにリクエストで受け取ったメッセージを表示できるようにしてみる
 });
 
 http.listen(3000, () => {
